@@ -12,6 +12,12 @@ const ll lim = 10e7;
 
 /// write function
 void solve(){
+    ll a,b;
+    cin>>a>>b;
+    cout<<a<<" + "<<b<<" = "<<a+b<<endl;
+    cout<<a<<" * "<<b<<" = "<<a*b<<endl;
+    cout<<a<<" - "<<b<<" = "<<a-b<<endl;
+
     
 }
 
@@ -21,10 +27,10 @@ int main(){
     io
 
     int t;
-    cin>>t;
+    //cin>>t;
     while(t--){
-        
+    //    solve();
     }
-    
+    solve();
     return 0;
 }
