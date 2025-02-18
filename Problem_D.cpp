@@ -10,7 +10,8 @@ const int mx_k = 5000000;
 const ll lim = 10e7;
 
 /// write function
-void solve(){
+void solve(int n){
+    
     
 }
 
@@ -19,11 +20,14 @@ int main(){
     fast()
 
     int t=1;
-    cin>>t;
+    //cin>>t;
     for(int i=1; i<=t; i++){
         // ll x;
         // cin>>x;
         //cout<<"Case "<<i<<": "<<x<<endl;
+        int n;
+        cin>>n;
+        solve(n);
 
     }
     
