@@ -3,8 +3,7 @@
 #define ll long long
 #define ul unsigned long long
 #define endl '\n'
-#define fast() ios::sync_with_stdio(false);
-#define io cin.tie(nullptr);
+#define fast() ios::sync_with_stdio(false); cin.tie(nullptr);
 using namespace std;
 
 const int mx_k = 5000000;
@@ -18,7 +17,6 @@ void solve(){
 ///main code
 int main(){
     fast()
-    io
 
     int t;
     cin>>t;
