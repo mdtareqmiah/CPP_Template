@@ -28,7 +28,7 @@ void solve(){
     
     case '-':
         if((a-b)==c){
-            cout<<"YES"<<endl;
+            cout<<"Yes"<<endl;
         }
         else{
             cout<<a-b<<endl;
@@ -37,7 +37,7 @@ void solve(){
 
     case '*':
         if((a*b)==c){
-            cout<<"YES"<<endl;
+            cout<<"Yes"<<endl;
         }
         else{
             cout<<a*b<<endl;
