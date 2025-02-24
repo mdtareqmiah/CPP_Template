@@ -1,5 +1,3 @@
-
-
 ///Tareq's template
 #include<bits/stdc++.h>
 #define ll long long
@@ -32,37 +30,49 @@ bool h_year(int a) {
 }
 
 bool b_year(int a) {
-    return a % 55 == 0 && l_year(a);
+    return ((a % 55 == 0) && l_year(a));
 }
 
 ///main code
 int main(){
     fast()
-    //io
+    io
 
     int y;
-    bool ch = true;
+    //bool ch = true;
 
-    while (cin >> y) {
-        if (!ch) {
-            cout << endl;
-        }
-        ch = false;
+    while (cin >> y && y>0) {
+        // if (!ch) {
+        //     cout << endl;
+        // }
+        // ch = false;
 
+        // if(y<=0){
+        //     return 1;
+        // }                                                       
         bool l = l_year(y);
         bool h = h_year(y);
         bool b = b_year(y);
 
-        if (l) {
+        if (l && !h) {
             cout << "This is leap year." << endl;
+            cout<<endl;
         }
-        if (h) {
+        if(l && h){
+            cout << "This is leap year." << endl;
+            cout << "This is huluculu festival year." << endl;
+            
+        }
+        if (!l && h) {
+            cout<<endl;
             cout << "This is huluculu festival year." << endl;
         }
         if (b) {
-            cout << "This is buluculu festival year." << endl;
+            cout << "This is leap year." << endl;
+            cout << "This is Buluculu festival year." << endl;
         }
         if (!l && !h && !b) {
+            cout<<endl;
             cout << "This is an ordinary year." << endl;
         }
     }
@@ -70,6 +80,3 @@ int main(){
     
     return 0;
 }
-
-
-

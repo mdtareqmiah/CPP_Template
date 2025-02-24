@@ -19,18 +19,22 @@ void solve(){
     for(int i=0; i<n; i++){
         cin>>v[i];
     }
-    int l=0, r=0, mx=0, x=0;
-    while(r<n){
-        x+=v[r];
-        while(x>m){
-            x-=v[l];
-            l--;
+    int mx=0, x=0, a=0, b=0;
+    for(int i=0; i<n; i++){
+        a+=v[i];
+         x++;
+        while(a>m){
+            a-=v[b];
+            b++;
+            x--;
         }
-        mx=max(mx,r-l+1);
-        r++;
+        if(x>mx){
+            mx=x;
+        }
     }
     cout<<mx<<endl;
 }
+
 
 ///main code
 int main(){
@@ -45,3 +49,4 @@ int main(){
     
     return 0;
 }
+
