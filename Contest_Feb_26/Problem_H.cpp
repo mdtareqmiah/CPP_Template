@@ -10,9 +10,12 @@ const int mx_k = 5000000;
 const ll lim = 10e7;
 
 /// write function
-void solve(){
-
-    return;
+ll solve(){
+    ll a,b;
+    cin>>a>>b;
+    a/=2;
+    return a*b;
+    //return;
 }
 
 ///main code
@@ -20,11 +23,11 @@ int main(){
     fast()
 
     int t=1;
-    //cin>>t;
+    cin>>t;
     for(int i=1; i<=t; i++){
         // ll x;
         // cin>>x;
-        //cout<<"Case "<<i<<": "<<x<<endl;
+        cout<<"Case "<<i<<": "<<solve()<<endl;
 
     }
     

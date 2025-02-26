@@ -11,7 +11,20 @@ const ll lim = 10e7;
 
 /// write function
 void solve(){
-
+    char ch[8][8];
+    for(int i=0; i<8; i++){
+        for(int j=0; j<8; j++){
+            cin>>ch[i][j];
+        }
+    }
+    //vector<string>s;
+    for(int i=0; i<8; i++){
+        for(int j=0; j<8; j++){
+            if(ch[i][j]>='a'&& ch[i][j]<='z'){
+                cout<<ch[i][j];
+            }
+        }
+    }
     return;
 }
 
@@ -20,12 +33,13 @@ int main(){
     fast()
 
     int t=1;
-    //cin>>t;
+    cin>>t;
     for(int i=1; i<=t; i++){
         // ll x;
         // cin>>x;
         //cout<<"Case "<<i<<": "<<x<<endl;
-
+        solve();
+        cout<<endl;
     }
     
     return 0;

@@ -11,7 +11,14 @@ const ll lim = 10e7;
 
 /// write function
 void solve(){
-
+    int a,b;
+    cin>>a>>b;
+    if(b<=(a*5)){
+        cout<<"YES"<<endl;
+    }
+    else{
+        cout<<"NO"<<endl;
+    }
     return;
 }
 
@@ -20,12 +27,12 @@ int main(){
     fast()
 
     int t=1;
-    //cin>>t;
+    cin>>t;
     for(int i=1; i<=t; i++){
         // ll x;
         // cin>>x;
         //cout<<"Case "<<i<<": "<<x<<endl;
-
+        solve();
     }
     
     return 0;

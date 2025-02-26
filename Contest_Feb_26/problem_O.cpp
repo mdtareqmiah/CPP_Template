@@ -11,7 +11,16 @@ const ll lim = 10e7;
 
 /// write function
 void solve(){
-
+    ll a; 
+    cin>>a;
+    if(a<0){
+        return;
+    }
+    int ct = 0;
+    for(ll i=5; i<=a; i*=5){
+        ct+=a/i;
+    }
+    cout<<ct<<endl;
     return;
 }
 
@@ -25,7 +34,7 @@ int main(){
         // ll x;
         // cin>>x;
         //cout<<"Case "<<i<<": "<<x<<endl;
-
+        solve();
     }
     
     return 0;
