@@ -14,7 +14,6 @@ const ll lim = 10e7;
 void solve(){
     
 }
-
 ///main code
 int main(){
     fast()
