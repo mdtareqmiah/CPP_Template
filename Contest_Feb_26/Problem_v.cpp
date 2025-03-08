@@ -29,6 +29,5 @@ int main(){
         //cout<<"Case "<<i<<": "<<x<<endl;
         solve();
     }
-    
     return 0;
 }
