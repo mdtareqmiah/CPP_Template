@@ -14,7 +14,21 @@ int a[N];
 
 /// write function
 void solve(){
-
+    int n, q;
+    cin>>n;
+    for(int i=0; i<n; i++){
+        cin>>a[i];
+    }
+    cin>>q;
+    while(q--){
+        int l,r;
+        cin>>l>>r;
+        int sum=0;
+        for(int i=l; i<=r; i++){
+            sum+=a[i];
+        }
+        cout<<sum<<endl;
+    }
     return;
 }
 
@@ -28,7 +42,7 @@ int main(){
         // ll x;
         // cin>>x;
         //cout<<"Case "<<i<<": "<<x<<endl;
-
+        solve();
     }
     
     return 0;

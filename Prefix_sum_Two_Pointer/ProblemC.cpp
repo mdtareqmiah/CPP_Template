@@ -14,7 +14,20 @@ int a[N];
 
 /// write function
 void solve(){
-
+    string s;
+    cin>>s;
+    int n=s.size();
+    vector<int>v(n,0);
+    for(int i=1; i<n; i++){
+        v[i]=v[i-1]+(s[i]==s[i-1]);
+    }
+    int m;
+    cin>>m;
+    while(m--){
+        int l,r;
+        cin>>l>>r;
+        cout<<v[r-1]-v[l-1]<<endl;
+    }
     return;
 }
 
@@ -28,7 +41,7 @@ int main(){
         // ll x;
         // cin>>x;
         //cout<<"Case "<<i<<": "<<x<<endl;
-
+        solve();
     }
     
     return 0;
